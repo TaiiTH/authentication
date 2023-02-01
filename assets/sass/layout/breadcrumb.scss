@@ -1,0 +1,11 @@
+.breadcrumb {
+    .breadcrumb-item {
+        &::before {
+            content: "";
+        }
+
+        i {
+            padding-right: 8px;
+        }
+    }
+}

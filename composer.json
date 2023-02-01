@@ -1,0 +1,8 @@
+{
+    "require": {
+        "nezamy/route": "1.3",
+        "lptech-asia/lp-recaptcha": "*",
+        "twig/twig": "^3.5",
+        "raveren/kint": "^1.2"
+    }
+}

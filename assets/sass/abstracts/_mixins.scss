@@ -1,0 +1,8 @@
+@mixin webkit-box($number: 4) {
+    display: -webkit-box !important;
+    -webkit-line-clamp: $number;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}

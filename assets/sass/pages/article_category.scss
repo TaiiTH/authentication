@@ -1,0 +1,98 @@
+.article_category {
+    &__item {
+        margin-bottom: 50px;
+        color: black;
+        
+        &:first-child {
+            & > * {
+                width: 100%;
+            }
+            .article_category__item {
+                &--img {
+                    border-radius: 10px;
+                    overflow: hidden;
+                    margin-bottom: 16px;
+                    
+                    img {
+                        transition: transform 0.5s;
+                        width: 100%;
+                        aspect-ratio: 16/9;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            img{
+                transform: scale(1.15);
+            }
+        }
+        
+        &--img {
+            border-radius: 10px;
+            overflow: hidden;
+
+            img {
+                transition: transform 0.5s;
+                width: 100%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+            }
+        }
+        
+        &--title {
+            font-size: 30px;
+            @include webkit-box(2);
+        }
+
+        p {
+            font-size: 18px;
+            @include webkit-box();
+        }
+
+        .btn-more {
+            font-size: 18px;
+            i {
+                margin-left: 5px !important;
+                -webkit-font-smoothing: antialiased;
+                transition: all .2s ease-out 0s;
+            }
+            
+            &:hover {
+                color: red;
+                i {
+                    padding-left: 6px;
+                }
+            }
+        }
+    }
+}
+
+.sidebar {
+    h3 {
+        span {
+            display: inline-block;
+            padding: 0 0 0 15px;
+            position: relative;
+            
+            &::before, &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: #101010;
+            }
+
+            &::before {
+                width: 3px;
+                height: 12px;                    
+            }
+
+            &::after {
+                width: 12px;
+                height: 3px;                    
+            }
+        }
+    }    
+}

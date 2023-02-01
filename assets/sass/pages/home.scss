@@ -1,0 +1,134 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Utilities */
+
+.card {
+  max-width: 600px;
+  padding: 2.5rem 2rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+  margin: 1rem;
+  position: relative;
+  transform-style: preserve-3d;
+  overflow: hidden;
+
+  img {
+    border-radius: 50%;
+    width: 8rem;
+    min-width: 80px;
+    box-shadow: 0 0 0 5px #FFF;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+  }
+  &::before {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    top: -.7rem;
+    left: -.7rem;
+  }
+  &::after {
+    height: 15rem;
+    width: 15rem;
+    background-color: #4172f5aa;
+    top: -8rem;
+    right: -8rem;
+    border-radius: 50%;
+    box-shadow: 2rem 6rem 0 -3rem #FFF
+  }
+
+  .name {
+  
+    h2 {
+      font-size: 1.3rem;
+    }
+  
+    h4 {
+      font-size: .8rem;
+      color: #333
+    }
+  }
+  
+  .link__change-password {
+    margin-bottom: 8px;
+    color: #0d6efd;
+    cursor: pointer;
+  }
+
+  .infos {
+    margin-left: 1.5rem;
+  
+    .text {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .logout {
+    text-decoration: none;
+    background-color: transparent;
+    min-width: 120px;
+    padding: .5rem;
+    border: 1px solid #222;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .25s linear;
+
+    &:hover {
+      background-color: #222;
+      a {
+        color: white;
+      }
+    }
+      
+    a {
+        text-decoration: none;
+        color: black;
+    }      
+  }
+}
+
+.form-changepass {
+  display: none;
+
+  .btn-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    border: 1px solid #222;
+    border-radius: 50%;
+    transform: rotate(180deg);
+    &:hover {
+      cursor: pointer;
+      background-color: #222;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    display: block;
+  }
+  .infos {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+}

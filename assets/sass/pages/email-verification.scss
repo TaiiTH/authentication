@@ -1,0 +1,22 @@
+.verification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+    .container {
+        width: 600px;
+    }
+
+    a {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    button {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
